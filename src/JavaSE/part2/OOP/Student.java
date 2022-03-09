@@ -12,4 +12,8 @@ public class Student {
     void speak(String words){
         System.out.println(name+" say:"+words);
     }
+
+    public static void abc() {
+        System.out.println("abc");
+    }
 }
