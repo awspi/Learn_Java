@@ -9,6 +9,12 @@ public class Student {//封装
         this.name=name;
         this.age=age;
     }
+    public void study(){//override
+        System.out.println("studying");
+    }
+    public static void rest(){//静态方法
+        System.out.println("drink water");
+    }
     public String getName(){
         return name;
     }
@@ -20,7 +26,7 @@ public class Student {//封装
         if(name.contains("w")) return;
         this.name=name;
     }
-    //单独给外部开放设置名称的方法，因为我还需要做一些额外的处理，所以说不能给外部直接操作成员变量的权限！
+    //单独给外部开放设置名称的方法，因为还需要做一些额外的处理，所以说不能给外部直接操作成员变量的权限！
     //封装思想其实就是把实现细节给隐藏了，外部只需知道这个方法是什么作用，而无需关心实现。
     //封装就是通过访问权限控制来实现的
 }
