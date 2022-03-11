@@ -47,7 +47,7 @@ public class Main {
     public static int test2(int a,int b) throws MyException{//声明抛出的异常类型
         if(b==0) throw new MyException("wrong");
         return a/b;
-    }·
+    }
 
     //try、catch和finally执行顺序：
     public static int test3(int a){
