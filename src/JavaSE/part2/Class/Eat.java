@@ -4,6 +4,8 @@ package JavaSE.part2.Class;
 public  interface Eat {//abstract
     //接口只能包含`public`权限的**抽象方法**！
     int a=0;//接口中变量默认为public static final
+
+    //接口 abstract 方法不能有主体
     default void eat(){//可以通过声明`default`关键字来给抽象方法一个默认实现：
 
     }
