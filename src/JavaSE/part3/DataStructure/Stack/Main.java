@@ -10,5 +10,17 @@ public class Main {
         stack.pop();
         stack.push("C");
         System.out.println("debug");
+
+        linked();
+    }
+    public static void linked(){
+        LinkedStack<String>stack=new LinkedStack<>();
+        stack.push("A");
+        stack.push("B");
+        stack.push("D");
+        System.out.println("debug");
+        stack.pop();
+        stack.push("C");
+        System.out.println("debug");
     }
 }

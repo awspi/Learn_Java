@@ -11,5 +11,12 @@ public class Main {
         queue.offer("e");
         System.out.println("debug");
 
+
+
+
+    }
+    public static void linked(){
+
+
     }
 }
