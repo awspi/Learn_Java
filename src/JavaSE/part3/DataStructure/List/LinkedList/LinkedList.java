@@ -1,5 +1,7 @@
 package JavaSE.part3.DataStructure.List.LinkedList;
-
+//实现为单向链表
+//实现双向链表
+//todo
 import JavaSE.part3.DataStructure.List.AbstractList;
 //数据分散的存储在物理空间中，通过一根线保存着它们之间的逻辑关系，这种存储结构称为链式存储结构
 //实际上，就是每一个结点存放一个元素和一个指向下一个结点的引用

@@ -477,7 +477,7 @@ public abstract class AbstractList<E> {
 
 ***
 
-栈和队列实际上就是对线性表加以约束的一种数据结构，如果前面的线性表的掌握已经ok，那么栈和队列就非常轻松了！
+<u>栈和队列实际上就是对线性表加以约束的一种数据结构</u>，如果前面的线性表的掌握已经ok，那么栈和队列就非常轻松了！
 
 #### 栈
 
@@ -541,9 +541,13 @@ Exception in thread "main" java.lang.StackOverflowError
 
 #### 队列
 
-队列同样也是受限制的线性表，不过队列就像我们排队一样，只能从队尾开始排，从队首出。
+<u>队列同样也是受限制的线性表</u>，不过队列就像我们排队一样，只能从队尾开始排，从队首出。
 
 ![img](https://img1.baidu.com/it/u=2682903513,371531599&fm=26&fmt=auto)
+
+![image-20220313231434320](/Users/wsp/Library/Application Support/typora-user-images/image-20220313231434320.png)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210311152602292.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3OTE2OTQ4,size_16,color_FFFFFF,t_70)
 
 所以我们要实现以下内容：
 
