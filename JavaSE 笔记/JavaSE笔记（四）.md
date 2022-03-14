@@ -641,7 +641,7 @@ public class TreeNode<E> {
 
 不知大家在之前的学习中是否发现，我们的Object类中，定义了一个叫做`hashcode()`的方法？而这个方法呢，就是为了更好地支持哈希表的实现。`hashcode()`默认得到的是对象的内存地址，也就是说，每个对象的hashCode都不一样。
 
-哈希表，其实本质上就是一个存放链表的数组，那么它是如何去存储数据的呢？我们先来看看长啥样：
+哈希表，其实本质上就是<u>一个存放链表的数组</u>，那么它是如何去存储数据的呢？我们先来看看长啥样：
 
 ![img](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg2020.cnblogs.com%2Fblog%2F2127470%2F202012%2F2127470-20201222194727385-1606433879.jpg&refer=http%3A%2F%2Fimg2020.cnblogs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1634376519&t=8cc6fc7a35e695cc5ba12687974daa54)
 
