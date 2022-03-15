@@ -1,5 +1,7 @@
 package JavaSE.part3.DataStructure.HashTable;
 //todo
+
+//https://zhuanlan.zhihu.com/p/30284593
 import java.util.Scanner;
 
 //public class Main {
