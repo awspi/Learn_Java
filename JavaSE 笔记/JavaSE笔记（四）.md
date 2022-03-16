@@ -913,6 +913,12 @@ list.replaceAll((i) -> {
 System.out.println(list);
 ```
 
+#### 函数式接口
+
+## [java8新特性——四大内置核心函数式接口](https://www.cnblogs.com/wuyx/p/9000312.html)
+
+
+
 #### Iterable和Iterator接口
 
 我们之前学习数据结构时，已经得知，不同的线性表实现，在获取元素时的效率也不同，因此我们需要一种更好地方式来统一不同数据结构的遍历。
