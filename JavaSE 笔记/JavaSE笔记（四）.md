@@ -1661,7 +1661,7 @@ public static void main(String[] args) {
 }
 ```
 
-那么，一开始提到的当做List进行操作呢？我们可以使用`Arrays.asList()`来将数组转换为一个 **固定长度的List**
+那么，一开始提到的当做List进行操作呢？我们可以使用`Arrays.asList()`来将数组转换为一个 <u>**固定长度的List**</u>
 
 ```java
 public static void main(String[] args) {
@@ -1696,6 +1696,7 @@ public static void main(String[] args) {
     List<Integer> list = new ArrayList<>();
     Collections.max(list);
     Collections.min(list);
+  Collections.singletonMap();//常用
 }
 ```
 
