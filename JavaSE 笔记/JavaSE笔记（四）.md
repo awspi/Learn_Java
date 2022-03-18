@@ -1724,7 +1724,7 @@ public class Main {
         head = reverse(head);
 
         while (head != null){
-            System.out.println(head.value+" ");
+            System.out.print(head.value+" ");
             head = head.next;
         }
     }
