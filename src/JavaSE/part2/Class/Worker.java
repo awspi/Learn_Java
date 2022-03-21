@@ -6,6 +6,11 @@ public final class Worker implements Eat{///类被声明为终态,则不可继�
     public final int salary;//类的成员属性被声明为final，那么必须在构造方法中或是在定义时赋初始值！
     public final String company="haut";
 
+    @Override
+    public void eat() {
+        Eat.super.eat();
+    }
+
     public Worker() {
         salary = 1;
     }
