@@ -477,7 +477,8 @@ public class Test {
 通过javac命令，手动编译一个.class文件：
 
 ```shell
-nagocoler@NagodeMacBook-Pro HelloWorld % javac src/main/java/com/test/Test.java
+wsp@bogon Learn_Java % cd ./src/com
+wsp@bogon com % javac test.java
 ```
 
 编译后，得到一个class文件，我们把它放到根目录下，然后编写一个我们自己的ClassLoader，因为普通的ClassLoader无法加载二进制文件，因此我们编写一个自己的来让它支持：
