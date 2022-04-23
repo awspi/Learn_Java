@@ -37,7 +37,7 @@ public static void main(String[] args) {
 
 相对路径是在当前运行的路径下寻找文件，而绝对路径，是从根目录开始寻找。路径分割符支持使用`/`或是`\\`，但是不能写为`\`因为它是转义字符！
 
-在使用完成一个流之后，必须关闭这个流来完成对资源的释放，否则资源会被一直占用！
+在**使用完成一个流之后，必须关闭这个流来完成对资源的释放**，否则资源会被一直占用！
 
 ```java
 public static void main(String[] args) {
@@ -86,7 +86,7 @@ public static void main(String[] args) {
 }
 ```
 
-使用read可以直接读取一个字节的数据，注意，流的内容是有限的，读取一个少一个！我们如果想一次性全部读取的话，可以直接使用一个while循环来完成：
+**使用read可以直接读取一个字节的数据**，注意，**流的内容是有限的，读取一个少一个**！我们如果想一次性全部读取的话，可以直接使用一个while循环来完成：` while ((tmp = inputStream.read()) != -1)`
 
 ```java
 public static void main(String[] args) {
@@ -180,6 +180,8 @@ public static void main(String[] args) {
 ```
 
 那么如果是我只想在文件尾部进行追加写入数据呢？我们可以调用另一个构造方法来实现：
+
+`new FileOutputStream("output.txt", true)`
 
 ```java
 public static void main(String[] args) {
