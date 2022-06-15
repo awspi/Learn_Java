@@ -2,17 +2,17 @@ package JavaSE.part4;
 
 public class Thread_ {
     public static void main(String[] args) throws InterruptedException {
-        t1();
-        t2();
+//        t1();
+//        t2();
         t3();
-        t4();
-        t5();
-        t6();
-        t7();
-        t8();
-        t9();
-        t10();
-        t11();
+//        t4();
+//        t5();
+//        t6();
+//        t7();
+//        t8();
+//        t9();
+//        t10();
+//        t11();
     }
     ////通过创建Thread对象来创建一个新的线程
     public static void t1(){

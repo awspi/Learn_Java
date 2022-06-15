@@ -1,18 +1,22 @@
 package JavaSE.part4;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Thread_2 {
     public static void main(String[] args) throws InterruptedException{
-        t1();
+//        t1();
         t2();
-        t3();
-        t4();
-        t5();
-        t6();
-        t7();
+//        t3();
+//        t4();
+//        t5();
+//        t6();
+//        t7();
 
     }
     //线程锁
     private static int value = 0;
+    private static List<String> list =new ArrayList<>();
     public static void t1() throws InterruptedException{
         //通过synchronized关键字来创造一个线程锁
         Thread t1 = new Thread(() -> {
@@ -51,12 +55,18 @@ public class Thread_2 {
         Thread_2  main1 = new Thread_2();
         Thread_2 main2 = new Thread_2();
         Thread t1 = new Thread(() -> {
+            System.out.println("进程1请求进入临界区…");
+            while(true){
+              if(value==1){
+                  break;
+              }
+            };
             for (int i = 0; i < 10000; i++) {
                 synchronized (main1){//
                     value++;
                 }
             }
-            System.out.println("线程1完成");
+            System.out.println("线程1退出");
         });
         Thread t2 = new Thread(() -> {
             for (int i = 0; i < 10000; i++) {
@@ -66,9 +76,10 @@ public class Thread_2 {
             }
             System.out.println("线程2完成");
         });
+        //进程x请求进入临界区…
         t1.start();
         t2.start();
-        Thread.sleep(1000);  //主线程停止1秒，保证两个线程执行完成
+//        Thread.sleep(1000);  //主线程停止1秒，保证两个线程执行完成
         System.out.println(value);
 
     }
